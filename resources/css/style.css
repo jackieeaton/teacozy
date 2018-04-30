@@ -1,0 +1,92 @@
+body,
+a,
+.navigation {
+  font-family: Helvetica, sans-serif;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+}
+
+/* Header Navigaton */
+
+.navigation {
+  display: flex;
+  position: fixed;
+  top: 0;
+  align-items: center;
+  height: 69px;
+  width: 100%;
+  border-bottom: 1px solid seashell;
+}
+
+.home {
+  position: relative;
+  left: 10px;
+}
+
+.logo {
+  height: 50px;
+}
+
+.nav-links {
+  display: inline-block;
+}
+
+
+/* Content */
+
+.content {
+  padding-top: 70px;
+}
+
+/* Hero Section */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
+  height: 700px;
+  width: 1200px;
+}
+.hero .image-content {
+  background-color: black;
+  width: 100%;
+}
+
+/* Tea of the Month Section */
+
+.tea-of-the-month {
+  width: 1200px;
+}
+
+.product-tiles {
+  width: 1000px;
+}
+
+.product img {
+  height: 200px;
+  width: 300px;
+  padding: 0 16px;
+}
+
+.product h4 {
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 32px;
+}
+
+.product-tiles .first-row,
+.product-tiles .second-row {
+  display: flex;
+  justify-content: center;
+}
+
+/* Locations Section */
+
+.locations {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
+  
+}
