@@ -1,45 +1,48 @@
-body,
-a,
-.header {
+/* Universal Styles */
+
+body {
+  margin: 0;
   font-family: Helvetica, sans-serif;
   font-size: 22px;
+  text-align: center;
   color: seashell;
   background-color: black;
   opacity: 0.9;
-  text-align: center;
-  margin: 0;
 }
 
-/* Header Navigaton */
+a {
+  color: seashell;
+  text-decoration: underline;
+}
 
-.header {
+/* Header */
+
+header {
   display: flex;
   position: fixed;
+  z-index: 1;
   top: 0;
   align-items: center;
   height: 69px;
   width: 100%;
+  background-color: black;
   border-bottom: 1px solid seashell;
 }
 
-.home {
-  position: relative;
-  left: 10px;
+.logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 10px;
 }
 
-.logo {
+.logo img{
   height: 50px;
   width: auto;
 }
 
-.navigation {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-}
-
-.nav-links {
-  display: inline-block;
+nav span {
+  padding: 10px;
 }
 
 
@@ -51,14 +54,9 @@ a,
   padding-top: 70px;
 }
 
-.text-headline {
-  /* padding-top: 40px; */
-  /* padding-bottom: 15px; */
-}
-
 /* Hero Section */
 
-.hero {
+#mission {
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
   display: flex;
   align-items: center;
@@ -66,14 +64,18 @@ a,
   height: 700px;
 }
 
-.hero .image-content {
+#mission .image-content {
   background-color: black;
   width: 100%;
 }
 
 /* Tea of the Month Section */
 
-.tea-of-the-month {
+#featured {
+  margin: 72px 0px;
+}
+
+.featured-teas {
   display: flex;
   justify-content: center;
 }
@@ -102,7 +104,7 @@ a,
 
 /* Locations Section */
 
-.locations {
+#locations {
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
   display: flex;
   flex-direction: column;
@@ -111,7 +113,7 @@ a,
   justify-content: center;
 }
 
-.locations h2 {
+#locations h2 {
   margin:0;
 }
 
@@ -131,11 +133,6 @@ a,
 }
 
 /* Footer Section */
-
-/* .footer {
-  display: flex;
-  justify-content: center;
-} */
 
 .contact {
   display: flex;
